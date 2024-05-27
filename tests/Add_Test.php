@@ -12,4 +12,8 @@ class Add_Test extends TestCase {
     $this->assertEquals(7, add(5, 2));
   }
 
+
+  public function test_subtract() {
+    $this->assertEquals(3, subtract(5, 2));
+  }
 }

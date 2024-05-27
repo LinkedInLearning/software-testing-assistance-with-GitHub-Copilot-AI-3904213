@@ -5,6 +5,10 @@ function add($a, $b) {
     return $a + $b;
 }
 
+function subtract($a, $b) {
+    return $a - $b;
+}
+
 echo add(5, 2); // 7
 
 function alphabetize_by_last_name( array $names ) {
