@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"Add_Test::test_add":0.002}}
+{"version":1,"defects":{"Slugify_Test::test_slugify_with_punctuation_at_the_end":7,"Slugify_Test::test_slugify":7},"times":{"Add_Test::test_add":0.002,"Slugify_Test::test_slugify":0.006,"Slugify_Test::test_slugify_with_punctuation_at_the_end":0}}
