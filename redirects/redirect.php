@@ -1,5 +1,5 @@
 <?php
-function getRedirects()
+function get_redirects()
 {
   return [
     'lil' => 'https://www.linkedin.com',
@@ -7,36 +7,30 @@ function getRedirects()
   ];
 }
 
-function getRequestedUrl()
+function get_requested_url()
 {
   return $_SERVER['REQUEST_URI'];
 }
 
-function redirectToUrl($url)
+function redirect_tor_url($url)
 {
   header("Location: $url");
   die;
 }
 
-function redirect()
+function should_redirect( $url ) {
+  $redirects = get_redirects();
+  return array_key_exists($url, $redirects);
+}
+
+function redirect_value( $url )
 {
-  $redirects = getRedirects();
-  $url = getRequestedUrl();
+  $redirects = get_redirects();
 
   // Check if the url ends with the redirect key
   foreach ($redirects as $key => $value) {
     if (str_ends_with($url, $key)) {
-      redirectToUrl($value);
+      return $value;
     }
-  }
-}
-
-function complicated_conditional( $url ) {
-  if (str_ends_with($url, 'lil')) {
-    return 'https://www.linkedin.com';
-  } elseif (str_ends_with($url, 'learning')) {
-    return 'https://www.linkedin.com/learning';
-  } else {
-    return null;
   }
 }
