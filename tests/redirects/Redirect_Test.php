@@ -38,12 +38,29 @@ class Redirect_Test extends TestCase
     }
 
     public function test_redirect_with_trailing_slash() {
-        $this->markTestIncomplete('This test has not been implemented yet.');
+        $redirects = [
+            'foo' => 'bar',
+        ];
+
+        // foo and foo/ should both redirect to bar
+        $this->assertEquals(true, should_redirect('foo', $redirects ) );
+        $this->assertEquals(true, should_redirect('foo/', $redirects));
+        $this->assertEquals('bar', redirect_value('foo', $redirects));
+        $this->assertEquals('bar', redirect_value('foo/', $redirects));
     }
 
     public function test_with_query_args() {
         $this->markTestIncomplete('This test has not been implemented yet.');
     }
     
+    public function test_redirect_value_object() {
+        $redirect_vo = new Redirect_VO( 'foo' );
+
+        $this->assertEquals('foo', $redirect_vo->get_key());
+        $this->assertEquals('bar', $redirect_vo->get_value());
+        $this->assertEquals(301, $redirect_vo->get_redirect_code());
+
+    }
+
 
 }
