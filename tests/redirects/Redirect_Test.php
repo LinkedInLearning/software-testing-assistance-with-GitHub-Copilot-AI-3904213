@@ -11,6 +11,7 @@ class Redirect_Test extends TestCase
     {
       
         require_once __DIR__ . '/../../redirects/redirect.php';
+        require_once __DIR__ . '/../../redirects/Redirect_VO.php';
         parent::setUp();
     }
 
@@ -54,11 +55,11 @@ class Redirect_Test extends TestCase
     }
     
     public function test_redirect_value_object() {
-        $redirect_vo = new Redirect_VO( 'foo' );
+        $redirect_vo = new \Redirect_VO( 'foo', 'bar', 301 );
 
-        $this->assertEquals('foo', $redirect_vo->get_key());
-        $this->assertEquals('bar', $redirect_vo->get_value());
-        $this->assertEquals(301, $redirect_vo->get_redirect_code());
+        $this->assertEquals('foo', $redirect_vo->getSource());
+        $this->assertEquals('bar', $redirect_vo->getDestination());
+        $this->assertEquals(301, $redirect_vo->getStatusCode());
 
     }
 
