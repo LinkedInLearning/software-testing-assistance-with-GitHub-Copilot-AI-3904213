@@ -23,15 +23,7 @@ class Redirect_VO {
     return $this->statusCode;
   }
 
-  public function setSource($source) {
-    $this->source = $source;
-  }
-
-  public function setDestination($destination) {
-    $this->destination = $destination;
-  }
-
-  public function setStatusCode($statusCode) {
-    $this->statusCode = $statusCode;
+  public function equivalent($redirect_vo) {
+    return $this->source == $redirect_vo->getSource() && $this->destination == $redirect_vo->getDestination() && $this->statusCode == $redirect_vo->getStatusCode();
   }
 }
