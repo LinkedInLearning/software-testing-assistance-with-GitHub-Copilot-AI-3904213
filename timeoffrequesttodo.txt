@@ -1,0 +1,12 @@
+Update the HR system allow employees to request time off. 
+This request should include start/end date, employee, supervisor, status.
+
+TODO:
+Start date must be in the future and end date must be after that.
+- test that a date is after another date
+- confirm the employee does not already have time off for those days
+-- check date overlaps with other dates
+- confirm the employee has enough time off available
+-- count the days off and make sure it isn't greater than another number
+
+Employee and supervisor cannot be the same.
