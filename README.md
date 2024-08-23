@@ -1,6 +1,10 @@
 # Software Testing Assistance with GitHub Copilot AI
 This is the repository for the LinkedIn Learning course Software Testing Assistance with GitHub Copilot AI. The full course is available from [LinkedIn Learning][lil-course-url].
 
+![lil-thumbnail-url]
+
+Discover how to leverage AI, specifically GitHub Copilot, to enhance automated testing in your software development process. Instructor Gary Kovar demonstrates how to write, refactor, and generate tests efficiently, ensuring code quality and stability. Gary starts by exploring the capabilities of Copilot, the principles of automated testing, and how AI can significantly bolster your test coverage and code quality. Learn to configure a test suite, identify testable code, and generate meaningful tests with ease. Practical sessions on refactoring with tests ensure you add a layer of safety to your development process. Upon completing this course, you’ll be ready to use GitHub Copilot to generate automated tests from existing code and create new code after writing tests.
+
 _See the readme file in the main branch for updated instructions and information._
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
@@ -20,15 +24,17 @@ To resolve this issue:
     Add changes to git using this command: git add .
 	Commit changes using this command: git commit -m "some message"
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+### Instructor
+
+Gary Kovar
+
+Senior Back-End Developer and Software Engineer                    
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/gary-kovar?u=104).
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+[lil-course-url]: https://www.linkedin.com/learning/software-testing-assistance-with-github-copilot-ai
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D560DAQGFjs4Kmb0Kzg/learning-public-crop_675_1200/learning-public-crop_675_1200/0/1724431008438?e=2147483647&v=beta&t=DDT7dUamNhtod1CfmaAd4XM317xt1nmzouoccrmbf5E
 
